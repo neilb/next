@@ -1,5 +1,10 @@
 Revision history for Perl extension NEXT.pm
 
+0.67_03 2021-04-18 NEILB
+    - mro was added in Perl 5.9.5, and it's not dual-life, so Reini's
+      patch (in 0.67_01) failed on earlier versions of Perl.
+      Have now made its use dependent on version, with "use if".
+
 0.67_02 2021-04-18 NEILB
     - Applied patch from Father C so that NEXT works with proxy constants.
       RT#123002
