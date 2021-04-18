@@ -1,5 +1,9 @@
 Revision history for Perl extension NEXT.pm
 
+0.67_02 2021-04-18 NEILB
+    - Applied patch from Father C so that NEXT works with proxy constants.
+      RT#123002
+
 0.67_01 2021-04-18 NEILB
     - Enforced strict and warnings on testsuite. Thanks to ATOOMIC.
     - Added github CI. Thanks to ATOOMIC.
