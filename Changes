@@ -1,5 +1,10 @@
 Revision history for Perl extension NEXT.pm
 
+0.68 2021-04-19 NEILB
+    - Fix for RT#123002, so NEXT works with proxy constants
+    - Made testsuite clean under strict & warnings
+    - Made testsuite pass if running under perls that are already c3.
+
 0.67_03 2021-04-18 NEILB
     - mro was added in Perl 5.9.5, and it's not dual-life, so Reini's
       patch (in 0.67_01) failed on earlier versions of Perl.
