@@ -17,7 +17,6 @@ my @TEST_REQUIRES = (
     'Test::More'    => 0.88,
     'constant'      => 0,
     'base'          => 0,
-    'mro'           => 0,
 );
 
 push(@REQUIRES, @TEST_REQUIRES) if $mm_ver < 6.64;
