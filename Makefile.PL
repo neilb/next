@@ -25,7 +25,7 @@ WriteMakefile(
     NAME         => q[NEXT],
     VERSION_FROM => q[lib/NEXT.pm],
     PREREQ_PM   => { @REQUIRES },
-    INSTALLDIRS  => $] >= 5.007003 ? 'perl' : 'site',
+    INSTALLDIRS  => ($] >= 5.007003 && $] < 5.011) ? 'perl' : 'site',
 
     ($mm_ver >= 6.64
         ? (TEST_REQUIRES => { @TEST_REQUIRES })
